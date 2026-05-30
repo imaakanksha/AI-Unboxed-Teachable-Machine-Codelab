@@ -1,5 +1,7 @@
 # 🧠 Teachable Machine Classifier Tools
 
+![image_alt](https://github.com/imaakanksha/AI-Unboxed-Teachable-Machine-Codelab/blob/main/Teachable_Machine..png)
+
 [![Build & Tests](https://img.shields.io/badge/Tests-Passing-green?style=for-the-badge&logo=pytest)](tests/)
 [![Python Version](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)](pyproject.toml)
 [![Framework](https://img.shields.io/badge/Framework-TensorFlow%20%7C%20Keras%203-orange?style=for-the-badge&logo=tensorflow)](src/teachable_machine/)
