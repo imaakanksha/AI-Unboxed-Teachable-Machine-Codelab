@@ -1,208 +1,155 @@
-# 🧠 Teachable Machine Classifier Tools
+# 🧠 AI Unboxed: From ChatGPT to Intelligent Machines
 
-![image_alt](https://github.com/imaakanksha/AI-Unboxed-Teachable-Machine-Codelab/blob/main/Teachable_Machine..png)
+> **Hands-on Generative AI workshops — from neural network foundations to autonomous agents and computer vision.**
+> Tokenization, attention, embeddings, hybrid search, RAG pipelines, model testing, Keras patching, Explainable AI, and agent architectures.
+> Fully self-paced. Runs anywhere: cloud, local, or fully offline.
 
-[![Build & Tests](https://img.shields.io/badge/Tests-Passing-green?style=for-the-badge&logo=pytest)](tests/)
-[![Python Version](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)](pyproject.toml)
-[![Framework](https://img.shields.io/badge/Framework-TensorFlow%20%7C%20Keras%203-orange?style=for-the-badge&logo=tensorflow)](src/teachable_machine/)
-[![CLI Command](https://img.shields.io/badge/CLI-teachable--tm-blueviolet?style=for-the-badge)](src/teachable_machine/cli.py)
-
-Welcome to the professional-grade, modular toolkit for deploying, patching, and evaluating **Google Teachable Machine** image classification models. 
-
-This repository provides an enterprise-ready Python package (`teachable_machine`) alongside a unified command-line tool (`teachable-tm`) to bridge the gap between initial Teachable Machine web prototypes and production-ready applications.
-
-![Teachable Machine CLI Screenshot](assets/cli_screenshot.png)
+[![W1: AI Foundations](https://img.shields.io/badge/W1_Foundations-Open_in_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/imaakanksha/AI-Unboxed-Teachable-Machine-Codelab/blob/main/01_ai_foundations/Workshop_1_AI_Foundations.ipynb)
+[![W2: Core NLP & RAG](https://img.shields.io/badge/W2_NLP_&_RAG-Open_in_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/imaakanksha/AI-Unboxed-Teachable-Machine-Codelab/blob/main/02_core_nlp_and_rag/Workshop_2_Core_NLP_and_RAG.ipynb)
+[![W3: Teachable Machine](https://img.shields.io/badge/W3_Teachable_Machine-Python_Package-blueviolet?style=for-the-badge&logo=python)](./03_teachable_machine_and_agentic_ai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
 
 ---
 
-## 📖 Complete Codelab Guide
+## 🎯 What You'll Learn
 
-For the full theoretical breakdown of all 22+ topics covered in this curriculum (including Attention, Embeddings, RAG, Hybrid Search, Explainable AI, Agentic Architectures, MCP, and more), please refer to:
+By completing this workshop series, you will be able to:
 
-👉 **[Read the Full AI Unboxed Codelab (CODELAB_AI_Unboxed.md)](CODELAB_AI_Unboxed.md)**
-
----
-
-## 📁 Clean Architecture Layout
-
-The project has been overhauled to follow standard Python packaging conventions:
-
-```files
-├── src/
-│   └── teachable_machine/
-│       ├── __init__.py           # Package exports & metadata
-│       ├── classifier.py         # ImageClassifier core inference engine
-│       ├── patcher.py            # H5 metadata patcher for Keras 3 compatibility
-│       ├── evaluator.py          # Dataset evaluator (accuracy, confusion matrix, precision/recall)
-│       ├── cli.py                # Console CLI commands
-│       ├── exceptions.py         # Structured exception hierarchy
-│       └── utils.py              # Label parsers and path helpers
-├── tests/
-│   ├── test_classifier.py        # Classifier integration tests
-│   └── test_patcher.py           # Model metadata patching unit tests
-├── model/
-│   ├── keras_model.h5            # Pre-trained Keras model
-│   ├── labels.txt                # Class label mapping file (0: Laptop, 1: Mobile)
-│   └── archive/
-│       └── converted_keras.zip   # Original model export archive
-├── test_images/
-│   ├── test.jpg                  # Sample test image 1
-│   ├── test-2.jpg                # Sample test image 2
-│   └── test-3.webp               # Sample test image 3
-├── dataset/
-│   ├── Laptop/                   # Subfolder of Laptop photos for evaluation
-│   └── Mobile/                   # Subfolder of Mobile photos for evaluation
-├── assets/
-│   └── cli_screenshot.png        # Command-line interface usage preview screenshot
-├── pyproject.toml                # Package configuration & dependency manifest
-├── model_test.py                 # Thin, backward-compatible wrapper script
-├── README.md                     # Redesigned professional documentation
-└── .gitignore                    # Python & IDE exclusion rules
-```
+- ✅ Explain **how neural networks learn** via forward passes, loss functions, backpropagation, and gradient descent.
+- ✅ Analyze the mechanics behind **emergent capabilities** and structural model hallucinations.
+- ✅ Diagnose model training failures like **overfitting vs. underfitting**.
+- ✅ **Tokenize text** using BPE/WordPiece and compute **semantic embeddings similarity**.
+- ✅ Deconstruct the Transformer's **self-attention equation** ($Q, K, V$ vectors).
+- ✅ Construct and configure **RAG chunking strategies** (overlap, fixed, paragraph, recursive).
+- ✅ Build **vector similarity, lexical, and hybrid search indexes** with reranking.
+- ✅ Patch legacy **Keras model metadata** to resolve Keras 3 version compatibility errors.
+- ✅ Evaluate image classification engines using **precision, recall, and confusion matrices**.
+- ✅ Describe the role of classifiers as **perception tools** in autonomous agent loops.
 
 ---
 
-## ⚡ Quick Start: Running Inference
+## 🗺️ Workshop Series
 
-### 1. Prerequisites
-Ensure you have Python 3.10+ installed. We recommend using `uv` (a fast Python package installer and resolver), but standard `pip` works.
+| # | Workshop | What You'll Build / Learn | Format | Time | Link |
+|:-:|---------|---------------------------|--------|:----:|:----:|
+| 1 | **[Foundations of AI](./01_ai_foundations/)** | Optimization loop simulation, logit temperature scaling, polynomial overfitting curve | Colab Notebook | ~90 min | [👉 Open](./01_ai_foundations/) |
+| 2 | **[Core NLP & RAG](./02_core_nlp_and_rag/)** | Sub-word tokenizer mapping, cosine similarity calculations, attention weights outputs, in-memory RAG | Colab Notebook | ~2 hrs | [👉 Open](./02_core_nlp_and_rag/) |
+| 3 | **[Teachable Machine & Agentic AI](./03_teachable_machine_and_agentic_ai/)** | Modular classification app, Keras compatibility patch CLI, dataset evaluator, advanced agent loop guides | Python Package | ~2 hrs | [👉 Open](./03_teachable_machine_and_agentic_ai/) |
 
-### 2. Set Up Environment & Install
+---
 
-#### Using `uv` (Recommended):
+## 🚀 Quick Start
+
+Each workshop is **self-contained**. Clone the repository and choose your entry point:
+
 ```bash
-# Create a virtual environment
-uv venv .venv
+git clone https://github.com/imaakanksha/AI-Unboxed-Teachable-Machine-Codelab.git
+cd AI-Unboxed-Teachable-Machine-Codelab
 
-# Activate the virtual environment
-# Windows (PowerShell):
-.venv\Scripts\Activate.ps1
-# Windows (CMD):
-.venv\Scripts\activate.bat
-# Linux/macOS:
-source .venv/bin/activate
+# Workshop 1 or 2: Launch Jupyter locally or click the Colab badges
+cd 01_ai_foundations
+# Open Workshop_1_AI_Foundations.ipynb
 
-# Install the package and dependencies in editable mode
-uv pip install -e .
-```
-
-#### Using Standard `pip`:
-```bash
-# Create virtual environment
-python -m venv .venv
-
-# Activate environment
-.venv\Scripts\Activate.ps1
-
-# Install package in editable mode
+# Workshop 3: Install and run the command-line tool
+cd ../03_teachable_machine_and_agentic_ai
 pip install -e .
-```
-
-### 3. Run Predictions
-
-You can verify the setup by running the root legacy script directly:
-```bash
-python model_test.py
-```
-
-Or execute via the newly registered command-line application `teachable-tm`:
-```bash
 teachable-tm predict test_images/test.jpg
 ```
 
 ---
 
-## 🛠️ CLI Reference: `teachable-tm`
+## 🏗️ Learning Path
 
-The package registers a unified command-line tool `teachable-tm` with rich console outputs and status animations.
-
-### 1. Image Prediction
-Classify an image using a model and label file.
-```bash
-teachable-tm predict <image_path> [--model model/keras_model.h5] [--labels model/labels.txt]
+```
+┌────────────────────────┐    ┌────────────────────────┐    ┌──────────────────────────┐
+│  01  AI FOUNDATIONS     │    │  02  CORE NLP & RAG     │    │  03  TEACHABLE MACHINE   │
+│                        │    │                        │    │                          │
+│  • Optimization loop   │    │  • Sub-word tokenizers │    │  • Image classifier CLI  │
+│  • Token probabilities │───▶│  • Attention mechanics  │───▶│  • Keras 3 metadata patch │
+│  • Temperature scaling │    │  • Vector embeddings   │    │  • Dataset evaluation    │
+│  • Overfitting curves  │    │  • In-memory RAG index │    │  • Agent perception guide│
+└────────────────────────┘    └────────────────────────┘    └──────────────────────────┘
+      Foundations                   NLP Pipelines                 Production-Grade
 ```
 
-### 2. Keras 3 Compatibility Patching
-Teachable Machine exports legacy model structures (built for Keras 2) which throw exceptions like `TypeError: DepthwiseConv2D got unexpected keyword argument 'groups'` in newer Keras/TensorFlow versions.
+**Recommended order:** 1 → 2 → 3 (each workshop builds on the previous conceptual framework).
 
-Apply metadata patching to safely fix the model files:
-```bash
-teachable-tm patch <model_path>
+---
+
+## 📋 Prerequisites
+
+| Requirement | Workshop 1 | Workshop 2 | Workshop 3 |
+|-------------|:----------:|:----------:|:----------:|
+| Python 3.10+ | ✅ (via Colab) | ✅ (via Colab) | ✅ (local) |
+| Google Account | ✅ | ✅ | Optional |
+| GPU | ❌ Not required | ❌ Not required | Optional (runs on CPU) |
+| Prior ML knowledge | ❌ None | Workshop 1 | Workshops 1 & 2 |
+
+---
+
+## 👨&zwj;🏫 For Instructors
+
+Each workshop directory contains a `guides/` subdirectory containing:
+- `INSTRUCTOR_GUIDE.md`: Target timetables, teaching hooks, student roadblocks, and quiz answers.
+- `RESOURCES.md` / `STUDENT_RESOURCES.md`: Deep dive links to research papers, documentation, and tools.
+- `PRESENTATION_SCRIPT.md` (W3): Word-for-word presentation delivery guidelines and terminal demonstration cues.
+
+---
+
+## 🏗️ Repository Structure
+
 ```
-*Note: A backup of the model (`.h5.bak`) is created automatically unless `--no-backup` is specified.*
-
-### 3. Dataset Evaluation
-Evaluate model metrics across a structured dataset folder. The dataset folder must contain subdirectories representing the target classes, filled with test images.
-```bash
-teachable-tm evaluate <dataset_path> [--output report.md]
+AI-Unboxed-Teachable-Machine-Codelab/
+├── README.md                    ← You are here
+├── LICENSE                      (MIT)
+├── CONTRIBUTING.md
+├── CHANGELOG.md
+│
+├── 01_ai_foundations/
+│   ├── README.md                Student guide
+│   ├── Workshop_1_AI_Foundations.ipynb
+│   └── guides/
+│       ├── INSTRUCTOR_GUIDE.md
+│       └── RESOURCES.md
+│
+├── 02_core_nlp_and_rag/
+│   ├── README.md                Student guide
+│   ├── Workshop_2_Core_NLP_and_RAG.ipynb
+│   └── guides/
+│       ├── INSTRUCTOR_GUIDE.md
+│       └── RESOURCES.md
+│
+└── 03_teachable_machine_and_agentic_ai/
+    ├── README.md                Student guide
+    ├── pyproject.toml           Package file
+    ├── model_test.py            Legacy test script
+    ├── report.md                Evaluation output
+    ├── src/                     Core source code
+    ├── tests/                   Unit tests
+    ├── model/                   Model binaries
+    ├── test_images/             Test sample files
+    ├── dataset/                 Evaluation images
+    └── guides/
+        ├── INSTRUCTOR_GUIDE.md
+        ├── PRESENTATION_SCRIPT.md
+        └── STUDENT_RESOURCES.md
 ```
 
 ---
 
-## 🐍 Library API Usage
+## 🤝 Contributing
 
-You can easily integrate this package into any Python codebase:
-
-```python
-from teachable_machine import ImageClassifier, TeachableException
-
-try:
-    # Initialize the classifier engine (loads model once)
-    classifier = ImageClassifier(model_path="model/keras_model.h5", label_path="model/labels.txt")
-    
-    # Run prediction on a file path or PIL.Image
-    result = classifier.predict("test_images/test.jpg")
-    
-    # Access structured fields
-    print(f"Class: {result.class_name}")
-    print(f"Confidence: {result.confidence:.4f}")
-    
-    # Get all class probabilities
-    for label, probability in result.probabilities.items():
-        print(f" - {label}: {probability * 100:.2f}%")
-        
-except TeachableException as e:
-    print(f"Teachable Machine Inference Error: {e}")
-```
+Found an issue or want to contribute a correction? Please read [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ---
 
-## 🔬 Dataset Evaluation Pipeline
+## 📄 License
 
-The evaluator generates performance tables (Precision, Recall, F1-Score, Support) and a Confusion Matrix to analyze classification strengths:
-
-```
-Dataset Evaluation Summary
-Accuracy: 95.45%
-Processed: 22 images
-
-Class Performance
--------------------------------------------------------------
-Class      Precision      Recall    F1-Score      Support
--------------------------------------------------------------
-Laptop        1.0000      0.9091      0.9524           11
-Mobile        0.9167      1.0000      0.9565           11
--------------------------------------------------------------
-
-Confusion Matrix (Row: Actual, Column: Predicted)
--------------------------------------------------------------
-Actual \ Predicted       Laptop       Mobile
--------------------------------------------------------------
-Laptop                       10            1
-Mobile                        0           11
--------------------------------------------------------------
-```
+This repository is licensed under the [MIT License](./LICENSE).
 
 ---
 
-## 🧪 Running Unit & Integration Tests
+## 🙏 Acknowledgements
 
-Ensure code correctness and package structure by executing tests via `pytest`:
-
-```bash
-# Install test requirements
-uv pip install -e .[dev]
-
-# Run tests
-pytest
-```
+- Structured references inspired by [bhaskarjha-dev/genai-workshops](https://github.com/bhaskarjha-dev/genai-workshops).
+- Core classifier code and models exported from [Google Teachable Machine](https://teachablemachine.withgoogle.com/).
