@@ -5,13 +5,16 @@
 > **Hands-on Generative AI workshops — from neural network foundations to autonomous agents and computer vision.**
 > Tokenization, attention, embeddings, hybrid search, RAG pipelines, model testing, Keras patching, Explainable AI, and agent architectures.
 > Fully self-paced. Runs anywhere: cloud, local, or fully offline.
-> 
-> 🎥 **[Watch the full 3-hour video session on YouTube!](https://www.youtube.com/watch?v=-8xTRNfq-DE)**
+
+> [!IMPORTANT]
+> ### 📺 Watch the 1-Hour Masterclass Session
+> Learn the complete concepts of Generative AI, NLP pipelines, RAG, and autonomous agent perception in this condensed 1-hour session.
+> 👉 **[Watch the Full Masterclass Recording on YouTube](https://www.youtube.com/watch?v=-8xTRNfq-DE)**
 
 [![W1: AI Foundations](https://img.shields.io/badge/W1_Foundations-Open_in_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/imaakanksha/AI-Unboxed-Teachable-Machine-Codelab/blob/main/01_ai_foundations/Workshop_1_AI_Foundations.ipynb)
 [![W2: Core NLP & RAG](https://img.shields.io/badge/W2_NLP_&_RAG-Open_in_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/imaakanksha/AI-Unboxed-Teachable-Machine-Codelab/blob/main/02_core_nlp_and_rag/Workshop_2_Core_NLP_and_RAG.ipynb)
 [![W3: Teachable Machine](https://img.shields.io/badge/W3_Teachable_Machine-Python_Package-blueviolet?style=for-the-badge&logo=python)](./03_teachable_machine_and_agentic_ai)
-[![Watch Session](https://img.shields.io/badge/Watch-Full_Session-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=-8xTRNfq-DE)
+[![Watch Session](https://img.shields.io/badge/Watch-1_Hour_Masterclass-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=-8xTRNfq-DE)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
 
 ---
