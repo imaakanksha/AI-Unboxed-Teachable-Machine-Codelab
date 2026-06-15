@@ -160,5 +160,4 @@ This repository is licensed under the [MIT License](./LICENSE).
 
 ## 🙏 Acknowledgements
 
-- Structured references inspired by [bhaskarjha-dev/genai-workshops](https://github.com/bhaskarjha-dev/genai-workshops).
 - Core classifier code and models exported from [Google Teachable Machine](https://teachablemachine.withgoogle.com/).
